@@ -1,0 +1,26 @@
+header {
+  width: 100%;
+  border: 1px sollid black;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    a {
+      text-decoration: none;
+      font: var(--button);
+      color: var(--text-title);
+    }
+
+    button {
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      border: none;
+      font: var(--button);
+      color: var(--text-title);
+
+      background-color: var(--pink-dark);
+    }
+  }
+}
