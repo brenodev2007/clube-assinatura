@@ -1,0 +1,39 @@
+#title {
+  display: flex;
+}
+
+.titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem;
+
+  h1 {
+    font: 700 1.75rem/1.5 var(--font-family);
+    color: var(--text-title);
+  }
+
+  p {
+    font: 500 0.875rem / 1.5 "Raleway", sans-serif;
+    color: var(--text-body);
+  }
+}
+
+@media (min-width: 80em) {
+  .titles {
+    gap: 2rem;
+    max-width: 65rem;
+    margin: auto;
+  }
+
+  .titles h1 {
+    font: 700 3rem / 1.5 var(--font-family);
+  }
+
+  .titles p {
+    font: var(--body-lg);
+  }
+}

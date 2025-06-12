@@ -35,10 +35,10 @@
   /* Tipografia */
   --font-family: "Raleway", sans-serif;
 
-  --title-lg: 700 3rem / auto var(--font-family);
-  --title-md: 700 2.5rem / auto var(--font-family);
-  --title-sm: 700 2rem / auto var(--font-family);
-  --title-xs: 700 1rem / auto var(--font-family);
+  --title-lg: 700 3rem / 1.5 var(--font-family);
+  --title-md: 700 2.5rem / 1.5 var(--font-family);
+  --title-sm: 700 2rem / 1.5 var(--font-family);
+  --title-xs: 700 1rem / 1.5 var(--font-family);
 
   --subtitle: 500 2rem/2 var(--font-family);
   --body-lg: 600 1.25rem/1.4 var(--font-family);
@@ -46,9 +46,9 @@
   --body-sm: 600 0.875rem/1.4 var(--font-family);
   --body-xs: 600 0.75rem/1.4 var(--font-family);
 
-  --button: 700 0.875rem / auto var(--font-family);
-  --link: 500 0.875rem / auto var(--font-family);
-  --tag: 700 0.625rem / auto var(--font-family);
+  --button: 700 0.875rem / 1.5 var(--font-family);
+  --link: 500 0.875rem / 1.5 var(--font-family);
+  --tag: 700 0.625rem / 1.5 var(--font-family);
 
   /* Espaçamentos */
   --py-base: 1rem;
@@ -60,6 +60,13 @@
 
 body {
   background-color: var(--shape-background);
+}
+
+.profile {
+  background: url(../Assets/hero-background.png) center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
 .container {
