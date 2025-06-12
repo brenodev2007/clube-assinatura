@@ -31,6 +31,12 @@
       position: absolute;
       right: 10%;
       rotate: 45deg;
+      transition: 0.5s;
+      animation-delay: 0.6s;
+      &:hover {
+        transform: scale(1.1);
+        rotate: 0deg;
+      }
     }
 
     & img[src*="opened"] {
@@ -39,6 +45,12 @@
       left: 53%;
       top: -60%;
       rotate: 45deg;
+      animation-delay: 0.4s;
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.1);
+        rotate: 0deg;
+      }
     }
 
     & img[src*="ouija"] {
@@ -46,7 +58,32 @@
       position: absolute;
       left: 10%;
       rotate: 45deg;
+      transition: 0.5s;
+      animation-delay: 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+        rotate: 0deg;
+      }
     }
+  }
+
+  & img[src*="crystal"],
+  & img[src*="opened"],
+  & img[src*="ouija"] {
+    animation: slideRight 0.8s ease-out forwards;
+    opacity: 0;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
