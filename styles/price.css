@@ -1,10 +1,21 @@
 .price {
+  margin-top: 15rem;
   & header {
     text-align: center;
+
+    h1 {
+      font: 700 1.5rem/1.5 "Raleway", sans-serif;
+      color: var(--text-body);
+      margin-bottom: 3rem;
+    }
   }
 
   .cards {
     margin-top: 2rem;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
   }
 
   h2 {
@@ -12,33 +23,57 @@
     margin-top: 0;
   }
 
-  .card p {
-    margin-top: 0.25rem;
-  }
+  .card {
+    width: 25rem;
+    border: 1px solid var(--blue-dark);
+    background-color: var(--blue-low);
+    border-radius: 20px;
+    padding: 1rem;
 
-  encantos-pricing {
-    display: block;
-    padding-block: 1.5rem;
-  }
+    h3 {
+      font: var(--title-xs);
 
-  encantos-pricing {
-    font: var(--title-md);
-    color: var(--text-title);
-  }
+      color: var(--blue-light);
+    }
 
-  .btn {
-    width: 100%;
-  }
+    encantos-pricing {
+      display: block;
+      font: var(--title-md);
+      color: var(--text-title);
 
-  li {
-    background: url(../Assets/star.svg) no-repeat;
-    padding-left: 2rem;
-  }
+      small {
+        font-size: 1rem;
+      }
+    }
 
-  ul + small {
-    display: block;
-    margin-top: 1.5rem;
-    font-size: 0.875rem;
+    li {
+      list-style: none;
+      background: url(../Assets/star-list.svg) no-repeat;
+      padding: 0.65rem 2rem;
+      font: var(--body-xs);
+      color: var(--text-body);
+      margin-top: 1rem;
+      margin-right: 1rem;
+    }
+
+    button {
+      font: var(--button);
+      padding: 1rem 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 1.5rem;
+      border: none;
+      background-color: var(--blue-dark);
+      transition: 0.5s;
+      border-radius: 10px;
+      color: var(--text-body);
+
+      &:hover {
+        background-color: var(--blue-light);
+      }
+    }
   }
 }
 
