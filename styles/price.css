@@ -1,0 +1,46 @@
+.price {
+  & header {
+    text-align: center;
+  }
+
+  .cards {
+    margin-top: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 0;
+  }
+
+  .card p {
+    margin-top: 0.25rem;
+  }
+
+  encantos-pricing {
+    display: block;
+    padding-block: 1.5rem;
+  }
+
+  encantos-pricing {
+    font: var(--title-md);
+    color: var(--text-title);
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  li {
+    background: url(../Assets/star.svg) no-repeat;
+    padding-left: 2rem;
+  }
+
+  ul + small {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (width >=80em) {
+}
