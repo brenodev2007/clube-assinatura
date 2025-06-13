@@ -1,0 +1,22 @@
+section.about {
+  margin-top: 10rem;
+  border: 1px solid red;
+
+  .title {
+    display: flex;
+    justify-content: center;
+    font: 700 1.5rem/1.5 "Raleway", sans-serif;
+    color: var(--text-body);
+    margin-bottom: 0.25rem;
+
+    img {
+      width: 1.5rem;
+    }
+  }
+
+  p {
+    font: 600 0.875rem/1.4 "Raleway", sans-serif;
+    color: var(--text-body);
+    text-align: center;
+  }
+}
