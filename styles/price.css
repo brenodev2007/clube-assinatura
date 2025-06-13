@@ -1,5 +1,6 @@
 .price {
   margin-top: 15rem;
+
   & header {
     text-align: center;
 
@@ -13,9 +14,37 @@
   .cards {
     margin-top: 2rem;
     display: flex;
-    overflow: hidden;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
+
+    .premium {
+      position: relative;
+      .card {
+        z-index: 1;
+        border: 1px solid var(--pink-dark);
+        li {
+          background: url(../Assets/stars-purple.svg) no-repeat;
+          list-style: none;
+        }
+
+        h3 {
+          color: var(--pink-dark);
+        }
+      }
+
+      .bunny {
+        img {
+          z-index: -1;
+          position: absolute;
+          top: -7%;
+          right: 100%;
+          rotate: -50deg;
+          bottom: 5%;
+        }
+      }
+    }
   }
 
   h2 {
@@ -46,6 +75,9 @@
       }
     }
 
+    ul {
+      margin-bottom: 4rem;
+    }
     li {
       list-style: none;
       background: url(../Assets/star-list.svg) no-repeat;
@@ -63,7 +95,6 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      margin-top: 1.5rem;
       border: none;
       background-color: var(--blue-dark);
       transition: 0.5s;
@@ -77,5 +108,22 @@
   }
 }
 
-@media (width >=80em) {
+@media (width >= 80em) {
+  .price .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .price .card {
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .price .card button {
+    margin-top: auto;
+  }
 }
