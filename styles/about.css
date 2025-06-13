@@ -1,6 +1,5 @@
 section.about {
   margin-top: 10rem;
-  border: 1px solid red;
 
   .title {
     display: flex;
@@ -18,5 +17,98 @@ section.about {
     font: 600 0.875rem/1.4 "Raleway", sans-serif;
     color: var(--text-body);
     text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .about-images {
+    width: 100%;
+
+    position: relative;
+
+    img[src*="book"] {
+      width: 60%;
+      display: flex;
+      position: absolute;
+      margin: auto;
+      top: 10%;
+      left: 10%;
+      z-index: 4;
+    }
+
+    img[src*="purple"] {
+      position: absolute;
+      width: 28%;
+      z-index: 3;
+      left: 70%;
+      rotate: 17deg;
+      transform: translate(0, 0) scale(0.5);
+      visibility: hidden;
+      visibility: visible;
+      animation: jumpFromBook 0.8s ease-out forwards;
+    }
+
+    img[src*="yellow"] {
+      position: absolute;
+      width: 28%;
+      left: 60%;
+      z-index: 2;
+      transform: translate(0, 0) scale(0.5);
+      visibility: hidden;
+      visibility: visible;
+      animation: jumpFromBook 0.8s ease-out forwards;
+      animation-delay: 0.2s;
+    }
+
+    img[src*="pin"] {
+      position: absolute;
+      width: 28%;
+      margin-top: 50%;
+      transform: translate(0, 0) scale(0.5);
+      visibility: hidden;
+      visibility: visible;
+      animation: jumpFromBook 0.8s ease-out forwards;
+      animation-delay: 0.4s;
+    }
+  }
+}
+
+@keyframes jumpFromBook {
+  0% {
+    transform: translate(0, 0) scale(0.5);
+  }
+  60% {
+    transform: translate(-20px, -80px) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@media (width >= 80em) {
+  section.about {
+    margin-top: 10rem;
+
+    .title {
+      display: flex;
+      justify-content: center;
+      font: var(--title-sm);
+      color: var(--text-body);
+      margin-bottom: 0.25rem;
+
+      img {
+        width: 2.5rem;
+      }
+    }
+
+    p {
+      font: var(--body-md);
+      color: var(--text-body);
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .about-images {
+      margin-top: 3rem;
+    }
   }
 }

@@ -90,6 +90,7 @@
 
 @media (width >= 80em) {
   .mystery {
+    margin-top: 20rem;
     & > div:nth-child(1) {
       display: flex;
       justify-content: center;
